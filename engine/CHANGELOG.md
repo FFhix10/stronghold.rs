@@ -1,5 +1,34 @@
 # Changelog
 
+## \[0.5.0]
+
+- Update inline Docs and README files to reflect the current state of the project.
+  - [fc95c271](https://www.github.com/iotaledger/stronghold.rs/commit/fc95c27128dedf8aa2d366776c22cb9c8e3f158a) add changes. on 2021-07-01
+  - [eafca12a](https://www.github.com/iotaledger/stronghold.rs/commit/eafca12ad915166d8039df6ad050bb1c65cbe248) fix changes format. on 2021-07-01
+
+- Add communication fuzzer for distributed fuzzing with docker.
+  Patch Stronghold engine fuzzer.
+  - [4f9d0f2a](https://www.github.com/iotaledger/stronghold.rs/commit/4f9d0f2af0bbcfb16e579f92306cc2d177c50d93) Feature: client communications fuzzer ([#216](https://www.github.com/iotaledger/stronghold.rs/pull/216)) on 2021-06-15
+  - [4e7c1c9a](https://www.github.com/iotaledger/stronghold.rs/commit/4e7c1c9a79868ec81b9bc972a9266f17cf0b8888) fix(covector): remove comms library from covector on 2021-08-25
+
+- Patch crypto.rs version v0.7 -> v0.8.
+  - [47b6364b](https://www.github.com/iotaledger/stronghold.rs/commit/47b6364bbd256f71cc7eb7cf4a731db19d39dab6) chore(\*): patch iota-crypto v0.7.0 -> v0.8.0 on 2021-11-12
+
+- \[[PR 269](https://github.com/iotaledger/stronghold.rs/pull/269)]
+  Refactor Error types in engine and client:
+
+- Add differentiated error types for the different methods
+
+- Avoid unwraps in the engine
+
+- Remove the single, crate-wide used error types of engine and client
+
+- Remove `anyhow` Error types in client and bubble up the actual error instead
+
+- Add nested Result type alias `StrongholdResult<T> = Result<T, ActorError>` for interface errors
+
+- [d6b814dd](https://www.github.com/iotaledger/stronghold.rs/commit/d6b814dd7729dbbf39b73e050767992aadc19377) Add Changelog for PR 269 on 2021-11-03
+
 ## \[0.4.0]
 
 - Merged Store, Vault and Snapshot into a single crate called Stronghold-Engine.

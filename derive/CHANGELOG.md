@@ -1,5 +1,14 @@
 # Changelog
 
+## \[0.3.0]
+
+- Update inline Docs and README files to reflect the current state of the project.
+  - [fc95c271](https://www.github.com/iotaledger/stronghold.rs/commit/fc95c27128dedf8aa2d366776c22cb9c8e3f158a) add changes. on 2021-07-01
+  - [eafca12a](https://www.github.com/iotaledger/stronghold.rs/commit/eafca12ad915166d8039df6ad050bb1c65cbe248) fix changes format. on 2021-07-01
+- \[[PR 258](https://github.com/iotaledger/stronghold.rs/pull/258)]
+  Implement API for the Stronghold Procedures, see PR 258 for details.
+  - [47b6364b](https://www.github.com/iotaledger/stronghold.rs/commit/47b6364bbd256f71cc7eb7cf4a731db19d39dab6) chore(\*): patch iota-crypto v0.7.0 -> v0.8.0 on 2021-11-12
+
 ## \[0.2.0]
 
 - Merged Store, Vault and Snapshot into a single crate called Stronghold-Engine.
